@@ -32,10 +32,23 @@ We can use backend frameworks for our project requirements.
 + GO: GIN, Echo
 + Rust: Actix-web, Rocket
 
+## I. Creating a Virtual Envrionment
+1. Identify your path.\
+   cd: changes working directory of the working drive or lettered drive. Type username to get into username folder. 
+   dir: identifying all files present in the C drive. \
+2. Install virtual envrionment
+   ```
+   pip install virtualenv
+   cd pro #this creates a folder for the envrionment to go.
+   C:\Users\theresaferguson\pro>virtualenv #virtualenv will be installed in pro folder. 
+
+    ```
+3. Activate virtual envrionment
 
 
 ## Glossary 
 **Robust Apps:** Apps which do not crash, manages errors gracefully.\
-**Scalable Apps:** Apps that handle high traffic websites without affecting performance.
+**Scalable Apps:** Apps that handle high traffic websites without affecting performance. \
 **Secure Apps:** Provides protection against common vulnerabilities such as SQL injection, Cross-Site Scripting(XSS), Cross-Site Request Forgery(CSRF) & Clickjacking. \
-**Model-View-Template (MVT):** architecute that promotes clean and pragmatic design. 
+**Model-View-Template (MVT):** architecute that promotes clean and pragmatic design. \
+**Virtual Envrionment:** Each particular project in Django is installed in an isolated envrionment so that neither project will affect another. 
