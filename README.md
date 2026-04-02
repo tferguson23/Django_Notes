@@ -1,7 +1,14 @@
 # Django Notes
 
 ## What is django: Introduction to Backend Frameworks
-Django is a high-level (focus on business logic) Python web framework that enables developers to build robust, scalable, and secure web applications quickly. It emphasizes rapid development, clean and pragmatic design, and comes with many built-in tools that eliminate the need to reinvent the wheel. 
+Django is a high-level (focus on business logic and core functionality) Python web framework that enables developers to build robust, scalable, and secure web applications quickly. It emphasizes rapid development, clean and pragmatic design, and comes with many built-in tools that eliminate the need to reinvent the wheel. 
+
+Every Django app follows MVT architecture. The importance of a clean design is that it creates an ogranized atmosphere and is easier to maintain. 
+
++ Authentication
++ URL routing: URL is mapped to a specific view. 
++ Forms & Validation
++ Database migrations: any changes to the structure will be automatically updated. 
 
 ## How web applications work:
 The user interacts with the client/browser, which then interacts with the server. The server will sned the appropriate request response (sending data back). 
@@ -28,6 +35,7 @@ We can use backend frameworks for our project requirements.
 
 
 ## Glossary 
-**Robust Apps:** Apps which do not crash, manages errors gracefully. 
-**Scalable Apps:** Apps that handle high traffic websites without affecting performance. /
-**Secure Apps:** Provides protection against common vulnerabilities such as SQL injection, Cross-Site Scripting(XSS), Cross-Site Request Forgery(CSRF) & Clickjacking. 
+**Robust Apps:** Apps which do not crash, manages errors gracefully. /
+**Scalable Apps:** Apps that handle high traffic websites without affecting performance. 
+**Secure Apps:** Provides protection against common vulnerabilities such as SQL injection, Cross-Site Scripting(XSS), Cross-Site Request Forgery(CSRF) & Clickjacking. /
+**Model-View-Template (MVT):** architecute that promotes clean and pragmatic design. 
