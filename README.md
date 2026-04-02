@@ -41,9 +41,18 @@ We can use backend frameworks for our project requirements.
    pip install virtualenv
    cd pro #this creates a folder for the envrionment to go.
    C:\Users\theresaferguson\pro>virtualenv #virtualenv will be installed in pro folder. 
-
     ```
 3. Activate virtual envrionment
+
+## II. Install Django 
+```
+(env) C:\Users\theresaferguson\pro>pip install django
+```
+
+## III. Creating our Django project
++ Make sure you have your command prompt opened up
++ Make sure you have your virtual envrionment activated
++ Ensure you are in the project's folder
 
 
 ## Glossary 
