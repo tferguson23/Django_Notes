@@ -11,7 +11,7 @@ Every Django app follows MVT architecture. The importance of a clean design is t
 + Database migrations: any changes to the structure will be automatically updated. 
 
 ## How web applications work:
-The user interacts with the client/browser, which then interacts with the server. The server will sned the appropriate request response (sending data back). 
+The user interacts with the client/browser, which then interacts with the server. The server will send the appropriate request response (sending data back). 
 
 ## Programming servers: Easy as pizza !
 + Handling incoming requests
@@ -35,7 +35,7 @@ We can use backend frameworks for our project requirements.
 ## I. Creating a Virtual Envrionment
 1. Create a new folder.\
    cd: changes working directory of the working drive or lettered drive. Type username to get into username folder.\ 
-   dir: identifying all files present in the C drive. 
+   ls: lists out all available files present in the directory.
 2. Install virtual envrionment
    ```
    open terminal
@@ -71,12 +71,28 @@ python manage.py runserver #localhost development server
 python manage.py makemigrations
 python manage.py createsuperuser
 ```
-### IV. File purposes in the Root Directory:
+### File purposes in the Root Directory:
 **__init__.py:** marks current directory as a python package.\
 **settings.py:** contains all settings for the Django project.\
 **wsgi.py:** "web server gateway interface"; acts as an entry point for deploying our application.\
 **asgi.py:** asyncronous gateway interface; used for handling asyncronous web protocols.\
 **urls.py:** contains all url patterns that are required inside our application. Patterns used to match incoming client requests. 
+
+## IV. Creating a Django App
+### What is an app in Django: 
++ Can be split into multiple parts to maintain the project easily.
++ Apps together form the Django project.
+> [!NOTE]
+> Make sure you are inside the Root Directory.
+```
+$ cd desktop
+$ cd pro
+$ cd env
+$ source bin/activate
+$ cd mysite
+$ python manage.py startapp myapp
+```
+
 
 
 ## Glossary 
