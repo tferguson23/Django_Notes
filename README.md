@@ -34,8 +34,8 @@ We can use backend frameworks for our project requirements.
 
 ## I. Creating a Virtual Envrionment
 1. Create a new folder.\
-   cd: changes working directory of the working drive or lettered drive. Type username to get into username folder. 
-   dir: identifying all files present in the C drive. \
+   cd: changes working directory of the working drive or lettered drive. Type username to get into username folder.\ 
+   dir: identifying all files present in the C drive. 
 2. Install virtual envrionment
    ```
    open terminal
@@ -64,7 +64,7 @@ $ django-admin startproject mysite #creates django project
 ```
 + open mysite directory
   + within the project directory 'external/ROOT directory', we have an internal 
-  + manage.py
+  + manage.py \
 What the file does: 
 ```
 python manage.py runserver #localhost development server
