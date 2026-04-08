@@ -107,18 +107,34 @@ def index(request): #request is the parameter
 ### Connecting a view to a URL pattern
 Each app should have its own url file. 
 
-### Keywords 
-**def** defines the function; accompanied by the chosen view name. 
-   **return** required for def. 
+### How Django URL patterns work internally 
+When a Django application receives a particular request, it will look at the variable in the settings.py file "ROOT_URLCONF" which points to a particular file. This will pair with any patterns that match the particular file. It will then call the view associated with that pattern. \
+Look at video #18 for reminders on this connection. 
+
+### Keywords and Functions
+**def** defines the function; accompanied by the chosen view name.\
+   **return** required for def. \
 **import** 
+**include** a function that includes a file in a path
 
-
+## VI. Database Models 
++ Data in a database is stored in the form of tables. 
++ We use **models** to save data in an application. 
+  + a blueprint used to create database table
+  + a Python class
+  + defined in models.py file
 
 ## Glossary 
 **Robust Apps:** Apps which do not crash, manages errors gracefully.\
 **Scalable Apps:** Apps that handle high traffic websites without affecting performance. \
 **Secure Apps:** Provides protection against common vulnerabilities such as SQL injection, Cross-Site Scripting(XSS), Cross-Site Request Forgery(CSRF) & Clickjacking. \
 **Model-View-Template (MVT):** architecute that promotes clean and pragmatic design. \
-**Virtual Envrionment:** Each particular project in Django is installed in an isolated envrionment so that neither project will affect another. You can create as many environments as you want. 
-**class:** a datatype, object constructor. 
-**parameter:** a variable name listed inside the parenthesis of a function definition. 
+**Virtual Envrionment:** Each particular project in Django is installed in an isolated envrionment so that neither project will affect another. You can create as many environments as you want. \
+**Application v Project folders:** 
+**views:** Functions that handle incoming URL request and send back HTTPResponse.\
+**class:** a datatype, object constructor. \
+**parameter:** a variable name listed inside the parenthesis of a function definition. \
+**.** current directory
+**database:** an organized collection of data stored electronically. \
+**Object Relational Mapper(ORM):** Elimantes the need of SQL to create databases through Django. \
+**Models:** Allow us to create database tables without having to write SQL. \
