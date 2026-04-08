@@ -92,6 +92,25 @@ $ source bin/activate
 $ cd mysite
 $ python manage.py startapp myapp
 ```
+## V. Myapp directory and the view file
+The view file processes the url request. 
++ define a function that will act as a view. 
++ We are _returning_ a request such as the HttpResponse. 
++ Import a response class for the return response object. 
+
+```
+from django.http import HttpResponse  
+
+def index(request): #request is the parameter
+   return HttpResponse("Hello World")
+``` 
+### Connecting a view to a URL pattern
+Each app should have its own url file. 
+
+### Keywords 
+**def** defines the function; accompanied by the chosen view name. 
+   **return** required for def. 
+**import** 
 
 
 
@@ -101,3 +120,5 @@ $ python manage.py startapp myapp
 **Secure Apps:** Provides protection against common vulnerabilities such as SQL injection, Cross-Site Scripting(XSS), Cross-Site Request Forgery(CSRF) & Clickjacking. \
 **Model-View-Template (MVT):** architecute that promotes clean and pragmatic design. \
 **Virtual Envrionment:** Each particular project in Django is installed in an isolated envrionment so that neither project will affect another. You can create as many environments as you want. 
+**class:** a datatype, object constructor. 
+**parameter:** a variable name listed inside the parenthesis of a function definition. 
