@@ -114,7 +114,7 @@ Look at video #18 for reminders on this connection.
 ### Keywords and Functions
 **def** defines the function; accompanied by the chosen view name.\
    **return** required for def. \
-**import** 
+**import** \
 **include** a function that includes a file in a path
 
 ## VI. Database Models 
@@ -123,6 +123,14 @@ Look at video #18 for reminders on this connection.
   + a blueprint used to create database table
   + a Python class
   + defined in models.py file
+
+python manage.py migrate: a command that creates a database for the DATABASE APPS directly. \
+
+You must makemigrations whenever you make changes to your models.
+```
+python manage.py makemigrations
+python manage.py migrate
+```
 
 ## Glossary 
 **Robust Apps:** Apps which do not crash, manages errors gracefully.\
@@ -134,7 +142,7 @@ Look at video #18 for reminders on this connection.
 **views:** Functions that handle incoming URL request and send back HTTPResponse.\
 **class:** a datatype, object constructor. \
 **parameter:** a variable name listed inside the parenthesis of a function definition. \
-**.** current directory
+**.** current directory\
 **database:** an organized collection of data stored electronically. \
 **Object Relational Mapper(ORM):** Elimantes the need of SQL to create databases through Django. \
-**Models:** Allow us to create database tables without having to write SQL. \
+**Models:** Allow us to create database tables without having to write SQL. 
