@@ -164,8 +164,52 @@ return render(request,"myapp/index.html")  #you are rendering the template from 
 ```
 Providing _context_ to templates: whenever you are rendering a template, you can add context (data). 
 + You can make use of key:value pair as a context object. 
-+ In a template, you need to distinguish that something is a variable with double curly braces. {{}}
++ In a template.html, you need to distinguish that something is a variable with double curly braces. {{}}
   + The query set will be returned when the variable is distinguished because it is rendering <mark>Item.objects.all()</mark>
+
+### Template formatting
+**Creating a for loop in templates** \
+This will allow the template to read the actual items in item_list as their variable names instead of the queryset format. 
+```
+{% for item in item_list %}
+    {{ item }}
+{% endfor %}
+```
+**Tags** these can be used in for loops. 
++ **<ul>** unordered list
++ **<li>** list tag
++ **<br>** gives a line break
++ **<a href="">** makes the text a hyperlink
+
+## VIIII. Creating a detailed view template
++ Add another view in views.py file Dwith def and return. 
++ Use an f string and curly braces. 
++ Create url pattern for new view.
++ Link specifc id items using: 
+  ```
+   <a href="/myapp/{{item.id}}">
+        {{ item.item_name }} ---- {{ item.item_price }} ---- {{ item.item_description }}    
+        </a>
+   ```
+**Django Template Language** 
+How we render the template language with DTL syntax. 
++ Templating Engine: Jinja2
++ {{}}: defines a variable; access or define any veriables that you may have. 
++ tags: allow of to define different things.
+
+**How to remove hardcoded urls and the alternative:**
+Hardcoded urls: contains a static and dynamic part. Not ideal for needing to change the urls frequently \
+Dynamic urls: assign names to the path in urls.py and change the url in index.html by uting a tag:
+```
+<a href="{% url 'detail' item.id %}">
+```
+**Namespacing, avoiding name conflicts**\
++ Go to urls.py inside of your _application_
++ Type app_name='myapp'
++ This requires you to update the template url: <a href="{% url 'myapp:detail' item.id %}"> 
+
+## X. Styling our application and static files _static/myapp_
+
 
 ## Glossary 
 **Robust Apps:** Apps which do not crash, manages errors gracefully.\
@@ -184,3 +228,4 @@ Providing _context_ to templates: whenever you are rendering a template, you can
 **Field:** a place where you can store information, a form where you can enter data. \
 **Dunder:** double underscore string representation.\
 **self:** how we identify the particular instance. 
+**Django template language:** using tags and variables
