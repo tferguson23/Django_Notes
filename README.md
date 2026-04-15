@@ -131,6 +131,41 @@ You must makemigrations whenever you make changes to your models.
 python manage.py makemigrations
 python manage.py migrate
 ```
+### Storing Data in a Database
+ORM and how it works: whenever you want to save something, you need to create and object which can be updated or deleted. Objects require a class. 
+
+### Saving data with the API 
+```
+python manage.py shell
+```
++ Create a python object and object.save()
+Add a string representation of the particular model: 
+```
+   def __str__(self):
+      return self.item_name()
+```
+
+## VII. Admin Panel 
+**Connecting admin to the models:**
+In your admin.py folder:
+```
+from .models import Items
+
+admin.site.register(Items)
+```
+
+### Retireving Objects
+Model + Manager + Method: Item.objects.all()
+
+## VIII. Templates 
+Allow us to combine the dynamic and static components into one and render them together. (using the render method)
+```
+return render(request,"myapp/index.html")  #you are rendering the template from the templates myapp index.html folder and file. 
+```
+Providing _context_ to templates: whenever you are rendering a template, you can add context (data). 
++ You can make use of key:value pair as a context object. 
++ In a template, you need to distinguish that something is a variable with double curly braces. {{}}
+  + The query set will be returned when the variable is distinguished because it is rendering <mark>Item.objects.all()</mark>
 
 ## Glossary 
 **Robust Apps:** Apps which do not crash, manages errors gracefully.\
@@ -145,4 +180,7 @@ python manage.py migrate
 **.** current directory\
 **database:** an organized collection of data stored electronically. \
 **Object Relational Mapper(ORM):** Elimantes the need of SQL to create databases through Django. \
-**Models:** Allow us to create database tables without having to write SQL. 
+**Models:** Allow us to create database tables without having to write SQL. \
+**Field:** a place where you can store information, a form where you can enter data. \
+**Dunder:** double underscore string representation.\
+**self:** how we identify the particular instance. 
