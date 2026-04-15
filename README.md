@@ -180,6 +180,8 @@ This will allow the template to read the actual items in item_list as their vari
 + **<li>** list tag
 + **<br>** gives a line break
 + **<a href="">** makes the text a hyperlink
++ **<nav>** 
++ **<div>**
 
 ## VIIII. Creating a detailed view template
 + Add another view in views.py file Dwith def and return. 
@@ -209,6 +211,11 @@ Dynamic urls: assign names to the path in urls.py and change the url in index.ht
 + This requires you to update the template url: <a href="{% url 'myapp:detail' item.id %}"> 
 
 ## X. Styling our application and static files _static/myapp_
++ go to index.html file and load the !DOCTYPE template, update the stylesheet link. 
++ {% load static %}
++ create a theme in your style.css file. 
+
+**Tailwind CSS**\
 
 
 ## Glossary 
