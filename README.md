@@ -1,4 +1,4 @@
-# <img src="assets/django-icon.png" width="50">  Django Notes
+# <img src="assets/python_django.png" width="50">  Django Notes
 
 ## What is Django: Introduction to Backend Frameworks
 Django is a high-level (focus on business logic and core functionality) Python web framework that enables developers to build robust, scalable, and secure web applications quickly. It emphasizes rapid development, clean and pragmatic design, and comes with many built-in tools that eliminate the need to reinvent the wheel. 
@@ -14,7 +14,7 @@ Every Django app follows MVT architecture. The importance of a clean design is t
 The user interacts with the client/browser, which then interacts with the server. The server will send the appropriate request response (sending data back). 
 
 ## Programming servers: Easy as pizza !
-**What servers do**\
+**What servers do:**
 + Handling incoming requests
 + Building routing logic
 + Integrating databases
