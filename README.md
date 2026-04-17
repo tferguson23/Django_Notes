@@ -34,7 +34,7 @@ We can use backend frameworks for our project requirements.
 + Rust: Actix-web, Rocket
 
 ## I. Creating a Virtual Envrionment
-1. Create a new folder
+1. Create a new folder \
    cd: changes working directory of the working drive or lettered drive. Type username to get into username folder. \
    ls: lists out all available files present in the directory.
 2. Install virtual envrionment
@@ -48,7 +48,7 @@ We can use backend frameworks for our project requirements.
 3. Activate virtual envrionment
    ```
    cd env
-   source bin/activate #program that activates the envrionment 
+   source env bin/activate #program that activates the envrionment 
    ```
 
 ## II. Install Django 
@@ -89,7 +89,7 @@ python manage.py createsuperuser
 $ cd desktop
 $ cd pro
 $ cd env
-$ source bin/activate
+$ source env bin/activate
 $ cd mysite
 $ python manage.py startapp myapp
 ```
@@ -125,7 +125,7 @@ Look at video #18 for reminders on this connection.
   + a Python class
   + defined in models.py file
 
-python manage.py migrate: a command that creates a database for the DATABASE APPS directly. \
+python manage.py migrate: a command that creates a database for the DATABASE APPS directly.
 
 You must makemigrations whenever you make changes to your models.
 ```
@@ -177,16 +177,16 @@ This will allow the template to read the actual items in item_list as their vari
 {% endfor %}
 ```
 **Tags** these can be used in for loops. 
-+ **<ul>** unordered list
-+ **<li>** list tag
-+ **<br>** gives a line break
-+ **<a href="">** makes the text a hyperlink
-+ **<nav>** 
-+ **<div>**
-+ **{% extends %}** allows you to inherit from any given template. 
++ ul: unordered list
++ li: list tag
++ br: gives a line break
++ a href="": makes the text a hyperlink
++ nav:
++ div:
++ {% extends %}: allows you to inherit from any given template. 
 
 ## VIIII. Creating a detailed view template
-+ Add another view in views.py file Dwith def and return. 
++ Add another view in views.py file with <ins>def</ins> and <ins>return.</ins>
 + Use an f string and curly braces. 
 + Create url pattern for new view.
 + Link specifc id items using: 
@@ -195,13 +195,13 @@ This will allow the template to read the actual items in item_list as their vari
         {{ item.item_name }} ---- {{ item.item_price }} ---- {{ item.item_description }}    
         </a>
    ```
-**Django Template Language** 
+**Django Template Language** \
 How we render the template language with DTL syntax. 
 + Templating Engine: Jinja2
 + {{}}: defines a variable; access or define any veriables that you may have. 
 + tags: allow of to define different things.
 
-**How to remove hardcoded urls and the alternative:**
+**How to remove hardcoded urls and the alternative:** \
 Hardcoded urls: contains a static and dynamic part. Not ideal for needing to change the urls frequently \
 Dynamic urls: assign names to the path in urls.py and change the url in index.html by uting a tag:
 ```
@@ -219,7 +219,7 @@ Dynamic urls: assign names to the path in urls.py and change the url in index.ht
 
 **Tailwind CSS**\
 **Applying tailwind template mods to other templates:**
-Creating a base template\
+Creating a base template \
 + Create a template and copy the elements.
 + Apply cdn link from index.html into the base template. 
 
