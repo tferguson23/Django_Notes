@@ -1,4 +1,4 @@
-# <img src="assets/django-con.png" width="50">  Django Notes
+# <img src="assets/django-icon.png" width="50">  Django Notes
 
 ## What is Django: Introduction to Backend Frameworks
 Django is a high-level (focus on business logic and core functionality) Python web framework that enables developers to build robust, scalable, and secure web applications quickly. It emphasizes rapid development, clean and pragmatic design, and comes with many built-in tools that eliminate the need to reinvent the wheel. 
