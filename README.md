@@ -1,9 +1,9 @@
-# Django Notes
+# <img src="assets/django-con.png" width="50">  Django Notes
 
 ## What is Django: Introduction to Backend Frameworks
 Django is a high-level (focus on business logic and core functionality) Python web framework that enables developers to build robust, scalable, and secure web applications quickly. It emphasizes rapid development, clean and pragmatic design, and comes with many built-in tools that eliminate the need to reinvent the wheel. 
 
-Every Django app follows MVT architecture. The importance of a clean design is that it creates an ogranized atmosphere and is easier to maintain. 
+Every Django app follows MVT architecture. The importance of a clean design is that it creates an organized atmosphere and is easier to maintain. 
 
 + Authentication
 + URL routing: URL is mapped to a specific view. 
@@ -14,6 +14,7 @@ Every Django app follows MVT architecture. The importance of a clean design is t
 The user interacts with the client/browser, which then interacts with the server. The server will send the appropriate request response (sending data back). 
 
 ## Programming servers: Easy as pizza !
+**What servers do**\
 + Handling incoming requests
 + Building routing logic
 + Integrating databases
@@ -33,8 +34,8 @@ We can use backend frameworks for our project requirements.
 + Rust: Actix-web, Rocket
 
 ## I. Creating a Virtual Envrionment
-1. Create a new folder.\
-   cd: changes working directory of the working drive or lettered drive. Type username to get into username folder.\ 
+1. Create a new folder
+   cd: changes working directory of the working drive or lettered drive. Type username to get into username folder. \
    ls: lists out all available files present in the directory.
 2. Install virtual envrionment
    ```
@@ -182,6 +183,7 @@ This will allow the template to read the actual items in item_list as their vari
 + **<a href="">** makes the text a hyperlink
 + **<nav>** 
 + **<div>**
++ **{% extends %}** allows you to inherit from any given template. 
 
 ## VIIII. Creating a detailed view template
 + Add another view in views.py file Dwith def and return. 
@@ -216,7 +218,10 @@ Dynamic urls: assign names to the path in urls.py and change the url in index.ht
 + create a theme in your style.css file. 
 
 **Tailwind CSS**\
-
+**Applying tailwind template mods to other templates:**
+Creating a base template\
++ Create a template and copy the elements.
++ Apply cdn link from index.html into the base template. 
 
 ## Glossary 
 **Robust Apps:** Apps which do not crash, manages errors gracefully.\
@@ -234,5 +239,5 @@ Dynamic urls: assign names to the path in urls.py and change the url in index.ht
 **Models:** Allow us to create database tables without having to write SQL. \
 **Field:** a place where you can store information, a form where you can enter data. \
 **Dunder:** double underscore string representation.\
-**self:** how we identify the particular instance. 
+**self:** how we identify the particular instance. \
 **Django template language:** using tags and variables
